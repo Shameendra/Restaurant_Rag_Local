@@ -52,17 +52,17 @@ python dish_finder.py
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                    User Query                        │
-│                  "pad thai"                          │
+│                    User Query                       │
+│                  "pad thai"                         │
 └─────────────────┬───────────────────────────────────┘
                   │
                   ▼
 ┌─────────────────────────────────────────────────────┐
-│              Search Pipeline                         │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐  │
-│  │ Exact   │→│ Partial │→│ Fuzzy   │→│ Keyword  │  │
-│  │ Match   │ │ Match   │ │ Match   │ │ Match    │  │
-│  └─────────┘ └─────────┘ └─────────┘ └──────────┘  │
+│              Search Pipeline                        │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐   │
+│  │ Exact   │→│ Partial │→│ Fuzzy   │→│ Keyword  │   │
+│  │ Match   │ │ Match   │ │ Match   │ │ Match    │   │
+│  └─────────┘ └─────────┘ └─────────┘ └──────────┘   │
 │                      │                              │
 │                      ▼ (if ML libraries installed)  │
 │              ┌──────────────┐                       │
@@ -73,7 +73,7 @@ python dish_finder.py
                   │
                   ▼
 ┌─────────────────────────────────────────────────────┐
-│              Ranked Results                          │
+│              Ranked Results                         │
 │  #1 Phad Thai @ Thong Thai - 7€ (exact, 100%)       │
 │  #2 Pad Thai @ Zenzakan - 18€ (partial, 90%)        │
 └─────────────────────────────────────────────────────┘

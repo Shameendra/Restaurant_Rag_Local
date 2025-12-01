@@ -1,0 +1,16 @@
+# Restaurant Dish Finder - Local RAG System
+# No LLM API required!
+
+# Core dependencies (required)
+numpy>=1.21.0
+
+# Semantic search (recommended, but optional)
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+
+# Fuzzy matching (recommended, but optional)
+rapidfuzz>=3.0.0
+
+# Note: The system works without sentence-transformers and faiss
+# but semantic search will be disabled. Keyword and fuzzy search
+# will still work.
